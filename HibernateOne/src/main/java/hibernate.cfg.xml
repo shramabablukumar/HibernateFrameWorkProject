@@ -1,0 +1,17 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/HibernateOne</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">tanu@2021</property>
+
+        <!-- Hibernate settings -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.show_sql">false</property>
+
+        <!-- Mapping classes -->
+        <mapping class="i.m.h.State"/>
+        <mapping class="i.m.h.Capital"/>
+    </session-factory>
+</hibernate-configuration>

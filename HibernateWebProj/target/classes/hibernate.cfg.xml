@@ -1,0 +1,21 @@
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Connection -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernateWeb</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">tanu@2021</property>
+
+       
+
+        <!-- Show SQL in console -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Automatically create or update tables -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <!-- Mapping class -->
+        <mapping class="h.w.p.Employee"/>
+    </session-factory>
+</hibernate-configuration>

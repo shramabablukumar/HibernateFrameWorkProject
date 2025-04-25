@@ -1,0 +1,19 @@
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- JDBC Properties -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/HibernateTest</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">tanu@2021</property>
+
+        
+       
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Mapping -->
+        <mapping class="d.f.g.Employee"/>
+
+    </session-factory>
+</hibernate-configuration>
